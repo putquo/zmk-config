@@ -45,10 +45,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE   &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y    &kp U        &kp I      &kp O    &kp P     &kp BSPC
-&kp LCTRL    &kp A  &kp S  &kp D     &kp F  &kp G        &kp H    &kp J        &kp K      &kp L    &kp SEMI  &kp SQT
-&dual_shift  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N    &kp M        &kp COMMA  &kp DOT  &kp FSLH  &dual_tab
-                           &kp LGUI  &mo 1  &kp SPACE    &kp RET  &dual_raise  &kp RALT
+&kp ESCAPE   &kp Q  &kp W  &kp E         &kp R  &kp T        &kp Y    &kp U        &kp I          &kp O    &kp P     &kp BSPC
+&dual_tab    &kp A  &kp S  &kp D         &kp F  &kp G        &kp H    &kp J        &kp K          &kp L    &kp SEMI  &kp SQT
+&dual_shift  &kp Z  &kp X  &kp C         &kp V  &kp B        &kp N    &kp M        &kp COMMA      &kp DOT  &kp FSLH  &sk RIGHT_CONTROL
+                           &kp LEFT_ALT  &mo 1  &kp SPACE    &kp RET  &dual_raise  &sk RIGHT_GUI
             >;
         };
 
@@ -60,10 +60,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB                       &kp N1        &kp N2        &kp N3            &kp N4      &kp N5                  &kp N6   &kp N7    &kp N8           &kp N9        &kp N0     &kp BSPC
-&kp LS(LA(LC(LG(LEFT_GUI))))  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LSHIFT  &kp LS(LC(LEFT_ALT))    &none    &kp LEFT  &kp DOWN_ARROW   &kp UP_ARROW  &kp RIGHT  &kp DEL
-&kp K_UNDO                    &none         &none         &kp K_PASTE       &kp K_COPY  &kp K_CUT               &kp END  &kp HOME  &kp PAGE_DOWN    &kp PG_UP     &none      &kp K_REDO
-                                                          &none             &trans      &kp SPACE               &kp RET  &trans    &kp PRINTSCREEN
+&trans                &kp N1        &kp N2            &kp N3        &kp N4      &kp N5                      &kp N6          &kp N7    &kp N8           &kp N9     &kp N0  &kp BSPC
+&kp LC(LS(LEFT_ALT))  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_GUI  &kp LSHIFT  &kp LA(LC(LS(LEFT_GUI)))    &kp LEFT_ARROW  &kp DOWN  &kp UP_ARROW     &kp RIGHT  &trans  &kp DEL
+&kp K_UNDO            &trans        &trans            &kp K_PASTE   &kp K_COPY  &kp K_CUT                   &kp END         &kp HOME  &kp PAGE_DOWN    &kp PG_UP  &trans  &kp K_REDO
+                                                      &none         &trans      &kp SPACE                   &kp RET         &trans    &kp PRINTSCREEN
             >;
         };
 
@@ -75,19 +75,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&trans  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
+&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp PIPE   &kp AMPS   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp STAR   &kp BSPC
+&trans  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BSLH   &kp GRAVE
+&trans  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp CARET  &kp TILDE
                           &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
             >;
         };
 
         control {
             bindings = <
-&bt BT_CLR    &none  &none  &bt BT_PRV         &bt BT_NXT       &soft_off     &kt F1  &kp F4  &kp F7  &kp F10  &none  &sys_reset
-&none         &none  &none  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE    &kp F2  &kp F5  &kp F8  &kp F11  &none  &none
-&out OUT_TOG  &none  &none  &none              &none            &none         &kp F3  &kp F6  &kp F9  &kp F12  &none  &bootloader
-                            &none              &trans           &none         &none   &trans  &none
+&none   &none   &none   &bt BT_PRV         &bt BT_NXT       &bt BT_CLR    &kt F1  &kp F4  &kp F7  &kp F10  &none  &kp DELETE
+&trans  &trans  &trans  &trans             &trans           &trans        &kp F2  &kp F5  &kp F8  &kp F11  &none  &none
+&none   &none   &none   &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE    &kp F3  &kp F6  &kp F9  &kp F12  &none  &out OUT_TOG
+                        &none              &trans           &none         &none   &trans  &none
             >;
         };
     };
