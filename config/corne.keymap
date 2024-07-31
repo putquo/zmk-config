@@ -174,10 +174,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans  &kp N3  &kp N4        &kp N7  &trans    &trans  &trans  &trans  &trans  &trans  &kp BSPC
-&trans  &trans  &kp N0  &kp N1        &kp N2  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp N9  &kp N5  &kp NUMBER_6  &kp N8  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans        &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &kp N6  &kp N7  &kp N8  &trans    &trans  &trans  &trans  &trans  &trans  &kp BSPC
+&trans  &trans  &kp N0  &kp N1  &kp N2  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp N9  &kp N3  &kp N4  &kp N5  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
