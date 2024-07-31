@@ -44,6 +44,95 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        AMPERSAND_COMB {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <21 9>;
+        };
+
+        PIPE_COMB {
+            bindings = <&kp PIPE>;
+            key-positions = <33 21>;
+        };
+
+        AT_COMB {
+            bindings = <&kp AT>;
+            key-positions = <2 14>;
+        };
+
+        GRAVE_COMB {
+            bindings = <&kp GRAVE>;
+            key-positions = <26 14>;
+        };
+
+        ASTERISK_COMB {
+            bindings = <&kp ASTERISK>;
+            key-positions = <8 20>;
+        };
+
+        SLASH_COMB {
+            bindings = <&kp SLASH>;
+            key-positions = <20 32>;
+        };
+
+        HASH_COMB {
+            bindings = <&kp HASH>;
+            key-positions = <3 15>;
+        };
+
+        BACKSLASH_COMB {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <15 27>;
+        };
+
+        PLUS_COMB {
+            bindings = <&kp PLUS>;
+            key-positions = <7 19>;
+        };
+
+        MINUS_COMB {
+            bindings = <&kp MINUS>;
+            key-positions = <19 31>;
+        };
+
+        DOLLAR_COMB {
+            bindings = <&kp DOLLAR>;
+            key-positions = <4 16>;
+        };
+
+        EQUAL_COMB {
+            bindings = <&kp EQUAL>;
+            key-positions = <16 28>;
+        };
+
+        CARET_COMB {
+            bindings = <&kp CARET>;
+            key-positions = <6 18>;
+        };
+
+        UNDERSCORE_COMB {
+            bindings = <&kp UNDER>;
+            key-positions = <18 30>;
+        };
+
+        PERCENT_COMB {
+            bindings = <&kp PERCENT>;
+            key-positions = <5 17>;
+        };
+
+        TILDE_COMB {
+            bindings = <&kp TILDE>;
+            key-positions = <17 29>;
+        };
+
+        TAB_COMB {
+            bindings = <&kp TAB>;
+            key-positions = <14 15>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
