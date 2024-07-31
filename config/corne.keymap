@@ -7,7 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
 / {
@@ -160,7 +159,7 @@
 
             bindings = <
 &trans  &kp N1       &kp N2            &kp N3        &kp N4       &kp N5                      &kp N6          &kp N7    &kp N8           &kp N9     &kp N0  &kp BSPC
-&trans  &kt LA(TAB)  &kp LEFT_CONTROL  &kp LEFT_GUI  &kp LSHIFT   &kp LA(LC(LS(LEFT_GUI)))    &kp LEFT_ARROW  &kp DOWN  &kp UP_ARROW     &kp RIGHT  &trans  &kp DEL
+&trans  &kp LA(TAB)  &kp LEFT_CONTROL  &kp LEFT_GUI  &kp LSHIFT   &kp LA(LC(LS(LEFT_GUI)))    &kp LEFT_ARROW  &kp DOWN  &kp UP_ARROW     &kp RIGHT  &trans  &kp DEL
 &trans  &trans       &kp K_CUT         &kp K_COPY    &kp K_PASTE  &trans                      &kp END         &kp HOME  &kp PAGE_DOWN    &kp PG_UP  &trans  &kp K_REDO
                                        &none         &trans       &trans                      &trans          &trans    &kp PRINTSCREEN
             >;
