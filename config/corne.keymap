@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <behaviors/num_word.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
@@ -23,13 +24,6 @@
             label = "DUAL_TAB";
             #binding-cells = <0>;
             bindings = <&kp TAB>, <&kp LS(TAB)>;
-        };
-
-        dual_raise: dual_raise {
-            compatible = "zmk,behavior-tap-dance";
-            label = "DUAL_RAISE";
-            #binding-cells = <0>;
-            bindings = <&sl 2>, <&mo 2>;
         };
 
         skq: skq {
@@ -203,7 +197,7 @@
 &kp ESCAPE    &kp Q  &kp W             &kp E               &kp R                 &kp T        &kp Y  &kp U                  &kp I                &kp O              &kp P       &kp BSPC
 &kp RET       &kp A  &hrml LEFT_ALT S  &hrml LEFT_SHIFT D  &hrml LEFT_CONTROL F  &kp G        &kp H  &hrmr RIGHT_CONTROL J  &hrmr RIGHT_SHIFT K  &hrmr RIGHT_ALT L  &kp SEMI    &kp SQT
 &kp LEFT_WIN  &kp Z  &kp X             &kp C               &kp V                 &kp B        &kp N  &kp M                  &kp COMMA            &kp DOT            &qmarkexcl  &sk RIGHT_CONTROL
-                                       &dual_tab           &sl 1                 &kp SPACE    &caps  &sl 2                  &kp RIGHT_ALT
+                                       &dual_tab           &sl 1                 &kp SPACE    &caps  &num_word 2            &kp RIGHT_ALT
             >;
         };
 
